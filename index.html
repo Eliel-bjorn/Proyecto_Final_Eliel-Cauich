@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/movil.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilex:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>CarWash</title>
+</head>
+<body>
+
+    <header class="fondo_transparente">
+        <div class="nav_contenedor ancho">
+        <figure class="logo">
+            <img src="img/logo-black.svg" alt="">
+            <span>CarWash</span>
+        </figure>
+        <nav id="menu">
+            <div id="icono_menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="contenedor_menu">
+                <li><a class="btn_ancla" href="#carousel">Home</a></li>
+                <li><a class="btn_ancla" href="#services">Services</a></li>
+                <li><a class="btn_ancla" href="#products">Products</a></li>
+                <li><a class="btn_ancla" href="#packages">Packages</a></li>
+                <li><a class="btn_ancla" href="#testimonials">Review</a></li>
+                <li><a class="btn_ancla btn_cta" href="#appointment">Book Appointment</a></li>
+                <li><a class="btn_ancla" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <!-- seccion carousel -->
+    <section id="carousel" >
+        <div id="slide-container" >
+            <article class="slide" data-slideIndex="0" style="background-image: url('img/slider-1.jpg');">
+                <div class="slide-content ancho">
+                    <p class="slide-subtitle">PROFESSIONAL SERVICES</p>
+                    <h2 class="slide-title">Car Wash Services</h2>
+                    <p class="slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus ex eros ut imperdiet. Suspendisse ante sem, consequat diam</p>
+                    <p class="slide-phone">Phone: 123 456 786</p>
+                    <a href="#contact" class="btn_carousel">Contact Us</a>
+                </div>
+            </article>
+
+            <article class="slide" data-slideIndex="1" style="background-image: url('img/slider-2.jpg');">
+                <div class="slide-content ancho">
+                    <p class="slide-subtitle">PROFESSIONAL SERVICES</p>
+                    <h2 class="slide-title">Car Wash Services</h2>
+                    <p class="slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus ex eros ut imperdiet. Suspendisse ante sem, consequat diam</p>
+                    <p class="slide-phone">Phone: 123 456 786</p>
+                    <a href="#contact" class="btn_carousel">Contact Us</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="contenedor_flechas">
+            <a href="#" id="back-button" class="arrow back">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="#" id="forward-button" class="arrow forward">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+        <div class="slide-indicators">
+            <div class="slide-indicator active"></div>
+            <div class="slide-indicator"></div>
+        </div>
+    </section>
+
+    <!-- seccion animacion con transition y transform -->
+    <section id="services" class="services-section">
+        <div class="ancho">
+            <h2 class="services-title">OUR SERVICES</h2>
+            <p class="services-subtitle">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</p>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <img src="img/oil.svg" alt="Oil Changes">
+                    </div>
+                    <h3 class="service-name">OIL CHANGES</h3>
+                    <p class="service-description">Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <img src="img/brakes.svg" alt="ABS Brakes">
+                    </div>
+                    <h3 class="service-name">ABS BRAKES</h3>
+                    <p class="service-description">Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <img src="img/transmission.svg" alt="Transmission Service">
+                    </div>
+                    <h3 class="service-name">TRANSMISSION SERVICE</h3>
+                    <p class="service-description">Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <img src="img/tire.svg" alt="Tires & Wheels">
+                    </div>
+                    <h3 class="service-name">TIRES & WHEELS</h3>
+                    <p class="service-description">Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <img src="img/carwash.svg" alt="Wash and Clean">
+                    </div>
+                    <h3 class="service-name">WASH AND CLEAN</h3>
+                    <p class="service-description">Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">
+                        <img src="img/engine.svg" alt="Engine Performance">
+                    </div>
+                    <h3 class="service-name">ENGINE PERFORMANCE</h3>
+                    <p class="service-description">Curabitur at arcu sed ex venenatis laoreet. Ut lobortis, turpis et porta ultrices, ligula ante hendrerit velit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion productos carousel -->
+    <section id="products" class="products-section">
+        <div class="ancho">
+            <h2 class="products-title">OUR PRODUCTS</h2>
+            <p class="products-subtitle">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</p>
+
+            <div id="products-carousel">
+                <div id="products-slide-container">
+                    <article class="product-slide" data-slideIndex="0">
+                        <div class="product-card">
+                            <img src="img/product-1.jpg" alt="Doors and Paint" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Doors and Paint</h3>
+                                <p class="product-price">$120</p>
+                                <p class="product-description">Order Any Painting your doors or you can buy new doors</p>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-slide" data-slideIndex="1">
+                        <div class="product-card">
+                            <img src="img/product-2.jpg" alt="Custom Interior" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Custom Interior</h3>
+                                <p class="product-price">$120</p>
+                                <p class="product-description">Order Leather Interior Designs for your cars any color</p>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-slide" data-slideIndex="2">
+                        <div class="product-card">
+                            <img src="img/product-3.jpg" alt="Leather Pushes" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Leather Pushes</h3>
+                                <p class="product-price">$120</p>
+                                <p class="product-description">Order Leather Leather Pushes for Interior Designs for your cars</p>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-slide" data-slideIndex="3">
+                        <div class="product-card">
+                            <img src="img/product-4.jpg" alt="Custom Seats" class="product-image">
+                            <div class="product-info">
+                                <h3 class="product-name">Custom Seats</h3>
+                                <p class="product-price">$120</p>
+                                <p class="product-description">Order Custom Seats Designs for your cars any style</p>
+                                <a href="#" class="btn-order">Order Now</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion service packages -->
+    <section id="packages" class="packages-section">
+        <div class="ancho">
+            <h2 class="packages-title">SERVICE PACKAGES</h2>
+            <p class="packages-subtitle">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</p>
+
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-item">
+                    <div class="package-price">$25</div>
+                    <h3 class="package-name">
+                        FREE SERVICES
+                        <i class="package-icon fas fa-chevron-down"></i>
+                    </h3>
+                    <ul class="package-list">
+                        <li>Wiper Blade Installation</li>
+                        <li>Check Engine Light Code Retrieval</li>
+                        <li>Air Filter Replacement Installation</li>
+                        <li>Starting and Charging System Evaluation</li>
+                    </ul>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-item">
+                    <div class="package-price">$25</div>
+                    <h3 class="package-name">
+                        HOME WASH SERVICES
+                        <i class="package-icon fas fa-chevron-down"></i>
+                    </h3>
+                    <ul class="package-list">
+                        <li>Spring Maintenance Package</li>
+                        <li>Summer Maintenance Package</li>
+                        <li>Winter Maintenance Package</li>
+                        <li>Smoke Test Diagnostic Service</li>
+                    </ul>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-item">
+                    <div class="package-price">$25</div>
+                    <h3 class="package-name">
+                        FLUID SERVICES
+                        <i class="package-icon fas fa-chevron-down"></i>
+                    </h3>
+                    <ul class="package-list">
+                        <li>Engine Flush Service</li>
+                        <li>Transmission Fluid Service</li>
+                        <li>Brake Fluid Exchange</li>
+                        <li>Coolant Drain and Fill</li>
+                        <li>Power Steering Flush</li>
+                    </ul>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="package-item">
+                    <div class="package-price">$25</div>
+                    <h3 class="package-name">
+                        SYSTEM EVALUATIONS
+                        <i class="package-icon fas fa-chevron-down"></i>
+                    </h3>
+                    <ul class="package-list">
+                        <li>A/C System Leak Evaluation</li>
+                        <li>Steering and Suspension System Evaluation</li>
+                        <li>Coolant System Evaluation</li>
+                        <li>Cranks No Start Diagnostic Service</li>
+                        <li>2nd A/C System Repair Evaluation</li>
+                    </ul>
+                </div>
+
+                <!-- Package 5 -->
+                <div class="package-item">
+                    <div class="package-price">$25</div>
+                    <h3 class="package-name">
+                        MAINTENANCE SERVICES
+                        <i class="package-icon fas fa-chevron-down"></i>
+                    </h3>
+                    <ul class="package-list">
+                        <li>Headlight Restoration</li>
+                        <li>Small Bulb Installation</li>
+                        <li>Cabin Air Filter Install</li>
+                        <li>Spring Maintenance Package</li>
+                    </ul>
+                </div>
+
+                <!-- Package 6 -->
+                <div class="package-item">
+                    <div class="package-price">$25</div>
+                    <h3 class="package-name">
+                        TUNE UPS
+                        <i class="package-icon fas fa-chevron-down"></i>
+                    </h3>
+                    <ul class="package-list">
+                        <li>Small Bulb Installation</li>
+                        <li>Cranks No Start Diagnostic Service</li>
+                        <li>Engine Cooling System Check</li>
+                        <li>Headlight Restoration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion gallery con tabs -->
+    <section id="gallery" class="gallery-section">
+        <div class="ancho">
+            <header class="gallery-header">
+                <h2 class="gallery-title">OUR GALLERY</h2>
+                <p class="gallery-subtitle">We Have Best Car Images Collections</p>
+            </header>
+
+            <nav class="gallery-tabs">
+                <ul class="tabs-list">
+                    <li class="tab-item"><a href="#all-gallery">All</a></li>
+                    <li class="tab-item"><a href="#repairing">Repairing</a></li>
+                    <li class="tab-item"><a href="#carwash">Car Wash</a></li>
+                    <li class="tab-item"><a href="#paint">Paint</a></li>
+                    <li class="tab-item"><a href="#new">New</a></li>
+                </ul>
+            </nav>
+
+            <div class="gallery-container">
+                <!-- Tab: All -->
+                <article class="gallery-content" id="all-gallery">
+                    <div class="gallery-grid">
+                        <figure class="gallery-item">
+                            <a href="img/gallery-1.jpg" data-fancybox="gallery-all">
+                                <img src="img/gallery-1.jpg" alt="Car Gallery 1">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="img/gallery-2.jpg" data-fancybox="gallery-all">
+                                <img src="img/gallery-2.jpg" alt="Car Gallery 2">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="img/gallery-3.jpg" data-fancybox="gallery-all">
+                                <img src="img/gallery-3.jpg" alt="Car Gallery 3">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="img/gallery-4.jpg" data-fancybox="gallery-all">
+                                <img src="img/gallery-4.jpg" alt="Car Gallery 4">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="img/gallery-5.jpg" data-fancybox="gallery-all">
+                                <img src="img/gallery-5.jpg" alt="Car Gallery 5">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="img/gallery-6.jpg" data-fancybox="gallery-all">
+                                <img src="img/gallery-6.jpg" alt="Car Gallery 6">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+                </article>
+
+                <!-- Tab: Repairing -->
+                <article class="gallery-content" id="repairing">
+                    <div class="gallery-grid">
+                        <figure class="gallery-item">
+                            <a href="img/gallery-1.jpg" data-fancybox="gallery-repairing">
+                                <img src="img/gallery-1.jpg" alt="Repairing 1">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="img/gallery-2.jpg" data-fancybox="gallery-repairing">
+                                <img src="img/gallery-2.jpg" alt="Repairing 2">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+                </article>
+
+                <!-- Tab: Car Wash -->
+                <article class="gallery-content" id="carwash">
+                    <div class="gallery-grid">
+                        <figure class="gallery-item">
+                            <a href="img/gallery-3.jpg" data-fancybox="gallery-carwash">
+                                <img src="img/gallery-3.jpg" alt="Car Wash 1">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="img/gallery-4.jpg" data-fancybox="gallery-carwash">
+                                <img src="img/gallery-4.jpg" alt="Car Wash 2">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+                </article>
+
+                <!-- Tab: Paint -->
+                <article class="gallery-content" id="paint">
+                    <div class="gallery-grid">
+                        <figure class="gallery-item">
+                            <a href="img/gallery-5.jpg" data-fancybox="gallery-paint">
+                                <img src="img/gallery-5.jpg" alt="Paint 1">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                        <figure class="gallery-item">
+                            <a href="img/gallery-6.jpg" data-fancybox="gallery-paint">
+                                <img src="img/gallery-6.jpg" alt="Paint 2">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+                </article>
+
+                <!-- Tab: New -->
+                <article class="gallery-content" id="new">
+                    <div class="gallery-grid">
+                        <figure class="gallery-item">
+                            <a href="img/gallery-7.jpg" data-fancybox="gallery-new">
+                                <img src="img/gallery-7.jpg" alt="New Car 1">
+                                <div class="gallery-overlay">
+                                    <span class="view-large-btn">VIEW LARGE</span>
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion testimonials carousel -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="ancho">
+            <header class="testimonials-header">
+                <h2 class="testimonials-title">TESTIMONIALS</h2>
+                <p class="testimonials-subtitle">People Love Us</p>
+            </header>
+
+            <div id="testimonials-carousel">
+                <!-- Comilla izquierda global -->
+               
+
+                <div id="testimonials-slide-container">
+                    <!-- Testimonio 1 -->
+                    <article class="testimonial-slide" data-slideIndex="0">
+                        <div class="testimonial-content">
+                            <figure class="testimonial-avatar">
+                                <img src="img/testimonial-2.jpg" alt="Imaan Butt">
+                            </figure>
+                            <blockquote class="testimonial-text">
+                               <i class="fa-solid fa-quote-left quote-left"></i>  <p>Wow Very Nice Team, I'm so happy with your service. You managed to exceed my expectations! You guys are very efficient and I will refer more people to your company!</p> <i class="fa-sharp fa-solid fa-quote-right quote-right"></i>
+
+                            </blockquote>
+                            <footer class="testimonial-author">
+                                <h3 class="author-name">Imaan Butt</h3>
+                                <div class="author-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+
+                    <!-- Testimonio 2 -->
+                    <article class="testimonial-slide" data-slideIndex="1">
+                        <div class="testimonial-content">
+                            <figure class="testimonial-avatar">
+                                <img src="img/testimonial-3.jpg" alt="Sanam Doe">
+                            </figure>
+                            <blockquote class="testimonial-text">
+                                <i class="fa-solid fa-quote-left quote-left"></i> <p>Thank you very much. Very Awesome Template. I'm impressed with your service. I've already told my friends about your template and your quick response, thanks again!</p> <i class="fa-sharp fa-solid fa-quote-right quote-right"></i>
+                            </blockquote>
+                            <footer class="testimonial-author">
+                                <h3 class="author-name">Sanam Doe</h3>
+                                <div class="author-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+
+                    <!-- Testimonio 3 -->
+                    <article class="testimonial-slide" data-slideIndex="2">
+                        <div class="testimonial-content">
+                            <figure class="testimonial-avatar">
+                                <img src="img/testimonial-4.jpg" alt="William Hoy">
+                            </figure>
+                            <blockquote class="testimonial-text">
+                                <i class="fa-solid fa-quote-left quote-left"></i> <p>Great Support, I would just like to say thank you for your prompt and effective service, for your friendly and professional support staff! I will recommend your expert company to all my friends.</p> <i class="fa-sharp fa-solid fa-quote-right quote-right"></i>
+                            </blockquote>
+                            <footer class="testimonial-author">
+                                <h3 class="author-name">William Hoy</h3>
+                                <div class="author-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Comilla derecha global -->
+                
+                <!-- Indicadores del carousel -->
+                <div class="testimonials-indicators">
+                    <div class="testimonial-indicator active" data-slide="0"></div>
+                    <div class="testimonial-indicator" data-slide="1"></div>
+                    <div class="testimonial-indicator" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion appointment con modal -->
+    <section id="appointment" class="appointment-section">
+        <div class="appointment-content">
+            <h2 class="appointment-title">24/7 FREE SERVICES</h2>
+            <p class="appointment-subtitle">We Are Committed To Providing Our Customers With Quality Repairs At A Fair Price.</p>
+            <button id="open-modal" class="appointment-btn">Schedule an Appointment</button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="agenda-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-modal" class="close-modal-btn">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <div class="modal-video">
+                <iframe id="youtube-video" src="https://www.youtube.com/embed/KL_nsjG1TUo"
+                        title="Car Wash Video"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- seccion logos -->
+    <section id="logos" class="logos-section">
+        <div class="ancho">
+            <div class="logos-grid">
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <img src="img/c-1.png" alt="Car Repair Logo 1">
+                </figure>
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <img src="img/c-2.png" alt="Car Repair Logo 2">
+                </figure>
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <img src="img/c-3.png" alt="Car Repair Logo 3">
+                </figure>
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
+                    <img src="img/c-4.png" alt="Car Repair Logo 4">
+                </figure>
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <img src="img/c-1.png" alt="Car Repair Logo 1">
+                </figure>
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">
+                    <img src="img/c-2.png" alt="Car Repair Logo 2">
+                </figure>
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <img src="img/c-3.png" alt="Car Repair Logo 3">
+                </figure>
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <img src="img/c-4.png" alt="Car Repair Logo 4">
+                </figure>
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+                    <img src="img/c-1.png" alt="Car Repair Logo 1">
+                </figure>
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s">
+                    <img src="img/c-2.png" alt="Car Repair Logo 2">
+                </figure>
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <img src="img/c-3.png" alt="Car Repair Logo 3">
+                </figure>
+                <figure class="logo-item wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">
+                    <img src="img/c-4.png" alt="Car Repair Logo 4">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion contacto -->
+    <section id="contact" class="contact-section">
+        <div class="ancho">
+            <header class="contact-header">
+                <h2 class="contact-title">CONTACT US</h2>
+                <p class="contact-subtitle">Get In Touch With Us 24/7</p>
+            </header>
+
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name*" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email*" required>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <span class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="8" placeholder="Write Your Message*" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content ancho">
+            <div class="footer-grid">
+                <!-- Columna 1: Logo y redes sociales -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="img/logo-black.svg" alt="CarWash Logo">
+                        <span>CarWash</span>
+                    </div>
+                    <p class="footer-description">
+                        At Car Wash, lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molus ex eros ut imperdiet. Suspendisse ante sem, consequat diam.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Useful Links -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Useful Links</h3>
+                    <div class="footer-links-grid">
+                        <ul class="footer-links">
+                            <li><a href="#home"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-angles-right"></i> Services</a></li>
+                            <li><a href="#contact"><i class="fa-solid fa-angles-right"></i> Contact</a></li>
+                            <li><a href="#review"><i class="fa-solid fa-angles-right"></i> Our Reviews</a></li>
+                            <li><a href="#faq"><i class="fa-solid fa-angles-right"></i> FAQs</a></li>
+                            <li><a href="#team"><i class="fa-solid fa-angles-right"></i> Our Team</a></li>
+                        </ul>
+                        <ul class="footer-links">
+                            <li><a href="#about"><i class="fa-solid fa-angles-right"></i> About</a></li>
+                            <li><a href="#portfolio"><i class="fa-solid fa-angles-right"></i> Portfolio</a></li>
+                            <li><a href="#team"><i class="fa-solid fa-angles-right"></i> Our Team</a></li>
+                            <li><a href="#partners"><i class="fa-solid fa-angles-right"></i> Our Partners</a></li>
+                            <li><a href="#news"><i class="fa-solid fa-angles-right"></i> Our News</a></li>
+                            <li><a href="#contact"><i class="fa-solid fa-angles-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Columna 3: Contact -->
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-map"></i>
+                            <div class="contact-text">
+                                <strong>Address:</strong>
+                                <p>45-11 West Town, PBs 12345, United States</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="contact-text">
+                                <strong>Phone:</strong>
+                                <p>+1 1234 56 789</p>
+                                <p>+1 1234 56 780</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-message"></i>
+                            <div class="contact-text">
+                                <strong>Email:</strong>
+                                <p>info@example.com</p>
+                                <p>email@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="ancho">
+                <div class="footer-bottom-content">
+                    <p class="copyright">CarWash - Car Wash © 2023 - Designed by Z-Themes.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#terms">Terms & Conditions</a>
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Scroll to Top -->
+    <button id="scroll-to-top" class="scroll-to-top-btn">
+        <i class="fa-solid fa-up-long"></i>
+    </button>
+
+     <!-- FUNCIONA JAVASCRIPT -->
+    <script>
+
+        // abrir menu
+        $("#icono_menu").click(function () {
+            $("#contenedor_menu").toggleClass('abrir_menu');
+        });
+
+        $(".btn_ancla").click(function () {
+            $("#contenedor_menu").toggleClass('abrir_menu');
+        });
+
+        // Acordeón para Service Packages
+        $(document).ready(function(){
+            // Ocultar todas las listas al cargar
+            $(".package-list").hide();
+
+            $(".package-name").click(function(e){
+                e.stopPropagation(); // Evita que el evento se propague
+
+                var titulo = $(this);
+                var contenido = titulo.next(".package-list");
+                var icono = titulo.find(".package-icon");
+
+                contenido.slideToggle(400);
+                icono.toggleClass("rotar");
+            });
+        });
+
+        // Tabs para Gallery
+        $(document).ready(function(){
+            // Ocultar todo el contenido
+            $(".gallery-content").hide();
+
+            // Activar el primer tab y mostrar su contenido
+            $(".tab-item:first").addClass("active");
+            $(".gallery-content:first").show();
+
+            // Evento click en las pestañas
+            $(".tab-item").click(function(){
+                // Quita la clase active de todos los tabs
+                $(".tab-item").removeClass("active");
+
+                // Agrega la clase active al tab clickeado
+                $(this).addClass("active");
+
+                // Oculta todo el contenido
+                $(".gallery-content").hide();
+
+                // Obtiene el id del contenido a mostrar
+                var activeTab = $(this).find("a").attr("href");
+
+                // Muestra el contenido correspondiente
+                $(activeTab).show();
+
+                return false;
+            });
+        });
+
+        // Modal para Agenda
+        $(document).ready(function(){
+            // Abrir modal
+            $("#open-modal").click(function(){
+                $("#agenda-modal").addClass("show-modal");
+            });
+
+            // Cerrar modal con botón X
+            $("#close-modal").click(function(){
+                $("#agenda-modal").removeClass("show-modal");
+            });
+
+            // Cerrar modal al hacer click fuera del contenido
+            $("#agenda-modal").click(function(e){
+                if(e.target.id === "agenda-modal"){
+                    $("#agenda-modal").removeClass("show-modal");
+                }
+            });
+        });
+
+        // Validación del formulario de contacto
+        $(document).ready(function(){
+            // Función para validar email
+            function validarEmail(email) {
+                var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+
+            // Función para mostrar error
+            function mostrarError(input, mensaje) {
+                var formGroup = input.closest('.form-group');
+                input.addClass('error').removeClass('success');
+                formGroup.find('.error-message').text(mensaje);
+            }
+
+            // Función para mostrar éxito
+            function mostrarExito(input) {
+                var formGroup = input.closest('.form-group');
+                input.addClass('success').removeClass('error');
+                formGroup.find('.error-message').text('');
+            }
+
+            // Validación en tiempo real para Name
+            $("#name").on('blur', function(){
+                var valor = $(this).val().trim();
+                if(valor === ''){
+                    mostrarError($(this), 'Name is required');
+                } else if(valor.length < 3){
+                    mostrarError($(this), 'Name must be at least 3 characters');
+                } else {
+                    mostrarExito($(this));
+                }
+            });
+
+            // Validación en tiempo real para Email
+            $("#email").on('blur', function(){
+                var valor = $(this).val().trim();
+                if(valor === ''){
+                    mostrarError($(this), 'Email is required');
+                } else if(!validarEmail(valor)){
+                    mostrarError($(this), 'Please enter a valid email');
+                } else {
+                    mostrarExito($(this));
+                }
+            });
+
+            // Validación en tiempo real para Message
+            $("#message").on('blur', function(){
+                var valor = $(this).val().trim();
+                if(valor === ''){
+                    mostrarError($(this), 'Message is required');
+                } else if(valor.length < 10){
+                    mostrarError($(this), 'Message must be at least 10 characters');
+                } else {
+                    mostrarExito($(this));
+                }
+            });
+
+            // Limpiar errores al escribir
+            $("#name, #email, #subject, #message").on('input', function(){
+                if($(this).val().trim() !== ''){
+                    $(this).removeClass('error');
+                    $(this).closest('.form-group').find('.error-message').text('');
+                }
+            });
+
+            // Validación al enviar el formulario
+            $("#contact-form").on('submit', function(e){
+                e.preventDefault();
+
+                var nombre = $("#name").val().trim();
+                var email = $("#email").val().trim();
+                var mensaje = $("#message").val().trim();
+                var errores = false;
+
+                // Validar nombre
+                if(nombre === ''){
+                    mostrarError($("#name"), 'Name is required');
+                    errores = true;
+                } else if(nombre.length < 3){
+                    mostrarError($("#name"), 'Name must be at least 3 characters');
+                    errores = true;
+                } else {
+                    mostrarExito($("#name"));
+                }
+
+                // Validar email
+                if(email === ''){
+                    mostrarError($("#email"), 'Email is required');
+                    errores = true;
+                } else if(!validarEmail(email)){
+                    mostrarError($("#email"), 'Please enter a valid email');
+                    errores = true;
+                } else {
+                    mostrarExito($("#email"));
+                }
+
+                // Validar mensaje
+                if(mensaje === ''){
+                    mostrarError($("#message"), 'Message is required');
+                    errores = true;
+                } else if(mensaje.length < 10){
+                    mostrarError($("#message"), 'Message must be at least 10 characters');
+                    errores = true;
+                } else {
+                    mostrarExito($("#message"));
+                }
+
+                // Si no hay errores, enviar formulario
+                if(!errores){
+                    alert('Form submitted successfully!\n\nName: ' + nombre + '\nEmail: ' + email + '\nSubject: ' + $("#subject").val() + '\nMessage: ' + mensaje);
+                    // Aquí puedes agregar el código para enviar el formulario con AJAX
+                    $("#contact-form")[0].reset();
+                    $(".form-group input, .form-group textarea").removeClass('error success');
+                }
+            });
+        });
+
+        // Botón Scroll to Top
+        $(document).ready(function(){
+            // Ocultar el botón inicialmente
+            $("#scroll-to-top").hide();
+
+            // Mostrar/Ocultar botón al hacer scroll
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 300){
+                    $("#scroll-to-top").fadeIn();
+                } else {
+                    $("#scroll-to-top").fadeOut();
+                }
+            });
+
+            // Scroll suave al inicio al hacer click
+            $("#scroll-to-top").click(function(){
+                $("html, body").animate({scrollTop: 0}, 800);
+                return false;
+            });
+        });
+    </script>
+
+    <script src="carousel.js"></script>
+    <script src="products-carousel.js"></script>
+    <script src="testimonials-carousel.js"></script>
+    <script src="fancybox_min.js"></script>
+
+    <script src="wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+
+
+</body>
+</html>
